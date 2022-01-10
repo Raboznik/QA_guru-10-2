@@ -2,16 +2,15 @@ package ru.yandex.mkruchkov.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import ru.yandex.mkruchkov.pages.components.CalendarComponent;
-import ru.yandex.mkruchkov.pages.components.Utils;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationPage extends Utils {
+public class RegistrationPage extends TestBase {
 
 
-   private SelenideElement
+    private SelenideElement
             firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             emailInput = $("#userEmail"),
@@ -32,48 +31,52 @@ public class RegistrationPage extends Utils {
         return this;
     }
 
-    public RegistrationPage setFirstName() {
-        firstNameInput.setValue(getName());
+    public RegistrationPage typeFirstName(String name) {
+        firstNameInput.setValue(name);
+
+
         return this;
     }
 
-    public RegistrationPage setLastName() {
-        lastNameInput.setValue(getLastName());
+    public RegistrationPage typeLastName(String lastName) {
+        lastNameInput.setValue(lastName);
+
         return this;
     }
 
-    public RegistrationPage setHobbies(String hobbies) {
+    public RegistrationPage typeHobbies(String hobbies) {
         $(byText(String.valueOf(hobbies))).click();
+
         return this;
     }
 
-    public RegistrationPage setBirthDate(String day, String month, String year) {
+    public RegistrationPage typeBirthDate(String day, String month, String year) {
         calendarComponent.setDate(day, month, year);
         return this;
     }
 
-    public RegistrationPage setEmail() {
-        emailInput.setValue(getEmail());
+    public RegistrationPage typeEmail(String email) {
+        emailInput.setValue(email);
         return this;
     }
 
-    public RegistrationPage setNumber() {
-        numberInput.setValue(getPhoneNumber());
+    public RegistrationPage typeNumber(String number) {
+        numberInput.setValue(number);
         return this;
     }
 
-    public RegistrationPage setGender(String gender) {
+    public RegistrationPage typeGender(String gender) {
         genderInput.$(byText(gender)).click();
         return this;
     }
 
-    public RegistrationPage setSubjects(String subjects) {
+    public RegistrationPage typeSubjects(String subjects) {
         subjectsInput.setValue(subjects).pressEnter();
         return this;
     }
 
-    public RegistrationPage setCurrentAddress() {
-        currentAddress.setValue(getAddress());
+    public RegistrationPage typeCurrentAddress(String address) {
+        currentAddress.setValue(address);
         return this;
     }
 
@@ -92,7 +95,7 @@ public class RegistrationPage extends Utils {
         return this;
     }
 
-    public RegistrationPage submit() {
+    public RegistrationPageExam submit() {
         submit.scrollIntoView(true).click();
         return new RegistrationPageExam();
     }

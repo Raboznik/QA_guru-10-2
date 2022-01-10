@@ -1,22 +1,8 @@
-package ru.yandex.mkruchkov.pages.components;
+package ru.yandex.mkruchkov.pages;
 
-import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 
-public class Utils {
-
-    @BeforeAll
-    static void setBrowserSize() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
-    }
-
-    @AfterAll
-    static void holdBrowser() {
-        Configuration.holdBrowserOpen = false;
-    }
+public class TestData {
 
     Faker faker = new Faker();
 
