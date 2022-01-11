@@ -8,21 +8,22 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class RegistrationPageExam extends TestData {
 
-    private SelenideElement
-            close = $("#closeLargeModal"),
-            resultTable = $(".table-responsive");
 
-    public RegistrationPageExam checkResultTable() {
+    private SelenideElement
+            close = $("#closeLargeModal");
+
+    public RegistrationPageExam checkResultTable(TestData data) {
+
         $$(".table td:last-child").shouldHave(exactTexts(
-                TestStudentRegistrationForm.data.getName() + " " + TestStudentRegistrationForm.data.getLastName(),
-                TestStudentRegistrationForm.data.getEmail(),
+                data.getName() + " " + data.getLastName(),
+                data.getEmail(),
                 "Other",
-                TestStudentRegistrationForm.data.getPhoneNumber(),
+                data.getPhoneNumber(),
                 "28 October,1987",
                 "English, Physics",
                 "Reading, Music",
                 "File",
-                TestStudentRegistrationForm.data.getAddress(),
+                data.getAddress(),
                 "Uttar Pradesh Agra"));
 
         return this;

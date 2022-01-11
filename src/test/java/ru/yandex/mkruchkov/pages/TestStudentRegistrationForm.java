@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class TestStudentRegistrationForm extends TestBase {
 
-    public static TestData data = new TestData();
+    TestData data = new TestData();
     RegistrationPage registrationPage = new RegistrationPage();
     RegistrationPageExam registrationPageExam = new RegistrationPageExam();
 
@@ -28,9 +28,8 @@ public class TestStudentRegistrationForm extends TestBase {
                 .selectCity("Agra")
                 .submit();
 
-
         registrationPageExam
-                .checkResultTable()
+                .checkResultTable(data)
                 .closeResultTable();
 
     }
