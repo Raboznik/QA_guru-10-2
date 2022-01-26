@@ -2,7 +2,7 @@ package ru.yandex.mkruchkov.pages;
 
 import com.github.javafaker.Faker;
 
-public class TestData {
+public class TestData  extends TestBase{
 
     Faker faker = new Faker();
 
