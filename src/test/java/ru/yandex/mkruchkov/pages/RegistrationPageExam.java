@@ -22,7 +22,8 @@ public class RegistrationPageExam extends TestData {
                 "28 October,1987",
                 "English, Physics",
                 "Reading, Music",
-                "File",
+                "",
+//                "File",
                 data.getAddress(),
                 "Uttar Pradesh Agra"));
 

@@ -23,7 +23,7 @@ public class TestStudentRegistrationForm extends TestBase {
                 .typeHobbies("Reading")
                 .typeHobbies("Music")
                 .typeCurrentAddress(data.getAddress())
-                .uploadPicture("File")
+//                .uploadPicture("File")
                 .selectState("Uttar")
                 .selectCity("Agra")
                 .submit();
