@@ -18,7 +18,13 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        String login = System.getProperty("login");
+        String password = System.getProperty("password");
+        String remote = System.getProperty("remote");
+
+        Configuration.remote = "https://" + login + ":" + password + "@" + remote;
+        Configuration.browser = System.getProperty("browser");
+        Configuration.browserVersion = System.getProperty("browserVersion");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
@@ -32,7 +38,7 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-//        Selenide.closeWebDriver();
         Attach.addVideo();
+        Selenide.closeWebDriver();
     }
 }
