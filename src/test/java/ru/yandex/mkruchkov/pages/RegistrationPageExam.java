@@ -8,12 +8,9 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class RegistrationPageExam extends TestData {
 
-
-    private SelenideElement
-            close = $("#closeLargeModal");
+    private SelenideElement close = $("#closeLargeModal");
 
     public RegistrationPageExam checkResultTable(TestData data) {
-
         $$(".table td:last-child").shouldHave(exactTexts(
                 data.getName() + " " + data.getLastName(),
                 data.getEmail(),
