@@ -19,7 +19,7 @@ public class RegistrationPageExam extends TestData {
                 data.getEmail(),
                 "Other",
                 data.getPhoneNumber(),
-                "28 October,1987",
+                "27 October,1987",
                 "English, Physics",
                 "Reading, Music",
                 "",

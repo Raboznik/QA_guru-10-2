@@ -60,8 +60,8 @@ public class RegistrationPage extends TestBase {
         return this;
     }
 
-    public RegistrationPage typeNumber(String number) {
-        numberInput.setValue(number);
+    public RegistrationPage typeNumber(String phoneNumber) {
+        numberInput.setValue(phoneNumber);
         return this;
     }
 
