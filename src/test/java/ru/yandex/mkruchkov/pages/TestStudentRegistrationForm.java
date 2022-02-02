@@ -2,6 +2,7 @@ package ru.yandex.mkruchkov.pages;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -14,6 +15,7 @@ public class TestStudentRegistrationForm extends TestBase {
     RegistrationPageExam registrationPageExam = new RegistrationPageExam();
 
     @DisplayName("Test with steps")
+    @Tag("properties")
     @Test
     void studentsRegistrationFormTest() {
 
@@ -49,8 +51,10 @@ public class TestStudentRegistrationForm extends TestBase {
             registrationPage.typeCurrentAddress(data.getAddress());
         });
         step("select state", () -> {
-            registrationPage.selectState("Uttar");
-            registrationPage.selectCity("Agra");
+            registrationPage.selectState("Haryana");
+        });
+        step("select city", () -> {
+            registrationPage.selectCity("Panipat");
         });
         step("submit form", () -> {
             registrationPage.submit();
@@ -63,6 +67,7 @@ public class TestStudentRegistrationForm extends TestBase {
             registrationPageExam.closeResultTable();
         });
     }
+
     @DisplayName("Test with dsl")
     @Test
     @Disabled

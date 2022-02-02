@@ -25,7 +25,7 @@ public class RegistrationPageExam extends TestData {
                 "",
 //                "File",
                 data.getAddress(),
-                "Uttar Pradesh Agra"));
+                "Haryana Panipat"));
 
         return this;
     }
