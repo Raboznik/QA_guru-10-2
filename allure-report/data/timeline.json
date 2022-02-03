@@ -1,0 +1,30 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-2A6IPP1",
+    "children" : [ {
+      "name" : "7660@DESKTOP-2A6IPP1.Test worker(1)",
+      "children" : [ {
+        "name" : "Test with steps",
+        "uid" : "702ba01651b592b7",
+        "parentUid" : "bcbf2c43685960677397a8a7b49d787e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1643726278991,
+          "stop" : 1643726288913,
+          "duration" : 9922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bcbf2c43685960677397a8a7b49d787e"
+    } ],
+    "uid" : "3e5f558a70ad03052e74bdbc8a52b963"
+  } ]
+}

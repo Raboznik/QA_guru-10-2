@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ru.yandex.mkruchkov.pages.TestStudentRegistrationForm",
+    "children" : [ {
+      "name" : "Test with steps",
+      "uid" : "702ba01651b592b7",
+      "parentUid" : "309d5b40ca868e43893b2771a5025115",
+      "status" : "broken",
+      "time" : {
+        "start" : 1643726278991,
+        "stop" : 1643726288913,
+        "duration" : 9922
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "309d5b40ca868e43893b2771a5025115"
+  } ]
+}
