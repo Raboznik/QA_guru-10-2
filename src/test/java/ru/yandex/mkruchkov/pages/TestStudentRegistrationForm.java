@@ -38,7 +38,7 @@ public class TestStudentRegistrationForm extends TestBase {
             registrationPage.typeNumber(data.getPhoneNumber());
         });
         step("select date birth", () -> {
-            registrationPage.typeBirthDate("28", "October", "1987");
+            registrationPage.typeBirthDate("27", "October", "1987");
         });
         step("type subjects", () -> {
             registrationPage.typeSubjects("En").typeSubjects("P");

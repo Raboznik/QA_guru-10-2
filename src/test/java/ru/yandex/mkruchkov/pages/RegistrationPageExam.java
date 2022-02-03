@@ -8,18 +8,15 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class RegistrationPageExam extends TestData {
 
-
-    private SelenideElement
-            close = $("#closeLargeModal");
+    private SelenideElement close = $("#closeLargeModal");
 
     public RegistrationPageExam checkResultTable(TestData data) {
-
         $$(".table td:last-child").shouldHave(exactTexts(
                 data.getName() + " " + data.getLastName(),
                 data.getEmail(),
                 "Other",
                 data.getPhoneNumber(),
-                "28 October,1987",
+                "27 October,1987",
                 "English, Physics",
                 "Reading, Music",
                 "",
