@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Tue Feb 01 17:37:58 MSK 2022","Tue Feb 01 17:38:08 MSK 2022","9922","","ru.yandex.mkruchkov.pages.TestStudentRegistrationForm","","ru.yandex.mkruchkov.pages.TestStudentRegistrationForm","studentsRegistrationFormTest","Test with steps",""

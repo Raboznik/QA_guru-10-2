@@ -1,0 +1,11 @@
+[ {
+  "uid" : "702ba01651b592b7",
+  "name" : "Test with steps",
+  "time" : {
+    "start" : 1643726278991,
+    "stop" : 1643726288913,
+    "duration" : 9922
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
