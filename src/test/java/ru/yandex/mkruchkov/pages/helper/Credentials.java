@@ -2,15 +2,15 @@ package ru.yandex.mkruchkov.pages.helper;
 
 import org.aeonbits.owner.Config;
 
-    @Config.Sources("classpath:config/credential.properties")
+    @Config.Sources("classpath:config/ServerConfig.properties")
     public interface Credentials extends Config {
-        @Key("credential.properties.url")
+        @Key("https.server.host")
         String url();
 
-        @Key("credential.properties.login")
+        @Key("server.host.login")
         String login();
 
-        @Key("credential.properties.password")
+        @Key("server.host.password")
         String password();
 
     }
