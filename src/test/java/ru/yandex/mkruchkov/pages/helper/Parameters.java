@@ -4,13 +4,13 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources("classpath:config/credential.properties")
 public interface Parameters extends Config {
-    @Key("URL")
+    @Key("credentials.properties.URL")
     String url();
 
-    @Key("login")
+    @Key("credentials.properties.login")
     String login();
 
-    @Key("password")
+    @Key("credentials.properties.password")
     String password();
 
 }
