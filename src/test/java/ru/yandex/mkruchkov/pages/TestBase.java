@@ -9,18 +9,18 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.yandex.mkruchkov.pages.helper.Attach;
-import ru.yandex.mkruchkov.pages.helper.Parameters;
+import ru.yandex.mkruchkov.pages.helper.Credentials;
 
 
 public class TestBase {
 
     @BeforeAll
-    static void setUp()  {
+    static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
-        Parameters cfgs = ConfigFactory.create(Сredential.class);
+        Credentials cfgs= ConfigFactory.create(Credentials.class);
 
 //        String login = System.getProperty("login");
 //        String password = System.getProperty("password");
