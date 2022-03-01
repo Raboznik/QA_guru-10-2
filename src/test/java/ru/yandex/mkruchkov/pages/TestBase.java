@@ -20,7 +20,7 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
-        Parameters cfgs = ConfigFactory.create(Parameters.class);
+        Parameters cfgs = ConfigFactory.create(Сredential.class);
 
 //        String login = System.getProperty("login");
 //        String password = System.getProperty("password");
